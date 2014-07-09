@@ -40,6 +40,7 @@ Makefile.in
 aclocal.m4
 autom4te.cache
 build-test-tarball.mk
+build/
 config.log
 config.status
 configure
@@ -86,7 +87,6 @@ src/Symbols.darwin
 src/Symbols.gnu-binutils
 src/Symbols.os2
 src/Symbols.static
-src/config.h
 src/config.h.in
 src/libsndfile-1.def
 src/sndfile.h
