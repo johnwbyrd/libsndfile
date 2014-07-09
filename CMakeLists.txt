@@ -72,6 +72,7 @@ file( GLOB libsndfile_srcs
 	src/xi.c
 	
 	src/G72x/g721.c
+	src/G72x/g72x.c
 	src/G72x/g723_16.c
 	src/G72x/g723_24.c
 	src/G72x/g723_40.c
@@ -111,5 +112,5 @@ add_library( libsndfile
 	${libsndfile_srcs} 
 )
 
-add_executable( sndfile src/sndfile.c )
-target_link_libraries( sndfile libsndfile )
+add_executable( sndfile-info programs/sndfile-info.c )
+target_link_libraries( sndfile-info libsndfile )

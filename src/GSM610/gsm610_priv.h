@@ -7,6 +7,10 @@
 #ifndef	PRIVATE_H
 #define	PRIVATE_H
 
+#ifdef _MSC_VER
+#define inline _inline
+#endif
+
 /* Added by Erik de Castro Lopo */
 #define	USE_FLOAT_MUL
 #define	FAST

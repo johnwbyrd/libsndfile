@@ -7,6 +7,7 @@
 #define PACKAGE "libsndfile"
 #define PACKAGE_NAME "libsndfile"
 #define PACKAGE_VERSION "0"
+#define program_name "libsndfile-program"
 #define VERSION "0"
 #define CPU_CLIPS_POSITIVE 0
 #define CPU_CLIPS_NEGATIVE 0

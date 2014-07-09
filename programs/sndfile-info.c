@@ -37,7 +37,7 @@
 #include	<ctype.h>
 #include	<math.h>
 
-#include	<sndfile.h>
+#include	"../src/sndfile.h"
 
 #include "common.h"
 
@@ -66,9 +66,9 @@ main (int argc, char *argv [])
 	print_version () ;
 
 	if (argc < 2 || strcmp (argv [1], "--help") == 0 || strcmp (argv [1], "-h") == 0)
-	{	usage_exit (program_name (argv [0])) ;
+	{	
 		return 1 ;
-		} ;
+	} ;
 
 	if (strcmp (argv [1], "--instrument") == 0)
 	{	int error = 0 ;
@@ -207,7 +207,7 @@ format_duration_str (double seconds)
 	min = (int) ((seconds - (hrs * 3600.0)) / 60.0) ;
 	sec = seconds - (hrs * 3600.0) - (min * 60.0) ;
 
-	snprintf (str, sizeof (str) - 1, "%02d:%02d:%06.3f", hrs, min, sec) ;
+	_snprintf (str, sizeof (str) - 1, "%02d:%02d:%06.3f", hrs, min, sec) ;
 
 	return str ;
 } /* format_duration_str */
